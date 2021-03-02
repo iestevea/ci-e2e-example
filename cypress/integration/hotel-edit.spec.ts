@@ -24,7 +24,7 @@ describe('Hotel edit specs', () => {
     cy.wait('@loadHotel');
     cy.wait('@loadCities');
 
-    cy.findByLabelText('Name').clear().type('Updated hotel two');
+    cy.findByLabelText('Name').clear().type('Updated hotel three'); // test-> fallo
     cy.findByRole('button', { name: 'Save' }).click();
 
     // Assert
